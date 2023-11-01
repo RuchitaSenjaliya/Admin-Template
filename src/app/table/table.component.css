@@ -1,0 +1,51 @@
+.text-blue {
+  color: #0b63f8 !important;
+}
+
+.table {
+  font-size: 1rem;
+}
+.table th {
+  font-size: 1.12rem;
+}
+.table td {
+  color: #595959;
+}
+::ng-deep .table .mat-mdc-table {
+  background-color: #fff !important;
+}
+::ng-deep .mat-elevation-z8,
+.mat-mdc-elevation-specific.mat-elevation-z8 {
+  box-shadow: none !important;
+}
+.mdc-data-table__row:last-child .mat-mdc-cell {
+  border-bottom: none !important;
+}
+::ng-deep .mat-mdc-header-cell,
+::ng-deep .mat-mdc-cell {
+  border-bottom-color: #f2f2f2 !important;
+}
+.example-margin {
+  margin: 0 20px 0 8px;
+}
+
+::ng-deep
+  .mdc-checkbox
+  .mdc-checkbox__native-control:enabled:checked
+  ~ .mdc-checkbox__background,
+.mdc-checkbox
+  .mdc-checkbox__native-control:enabled:indeterminate
+  ~ .mdc-checkbox__background,
+.mdc-checkbox
+  .mdc-checkbox__native-control[data-indeterminate="true"]:enabled
+  ~ .mdc-checkbox__background {
+  background-color: #0b63f8 !important;
+  border-color: #0b63f8 !important;
+}
+
+::ng-deep
+  .mdc-checkbox
+  .mdc-checkbox__native-control:focus:checked
+  ~ .mdc-checkbox__ripple {
+  background-color: #6aa1ff !important;
+}
