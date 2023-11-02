@@ -10,6 +10,8 @@
 }
 .table td {
   color: #595959;
+  padding: 16px;
+  font-size: 1rem;
 }
 ::ng-deep .table .mat-mdc-table {
   background-color: #fff !important;
@@ -48,4 +50,16 @@
   .mdc-checkbox__native-control:focus:checked
   ~ .mdc-checkbox__ripple {
   background-color: #6aa1ff !important;
+}
+@media screen and (max-width: 800px) {
+  .table {
+    font-size: 0.9rem;
+  }
+  .table th {
+    font-size: 1rem;
+  }
+  .table td {
+    padding: 12px;
+    font-size: 0.8rem;
+  }
 }

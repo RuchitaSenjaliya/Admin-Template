@@ -1,28 +1,42 @@
 <div class="sales-info">
   <h1 class="title">Sales Information</h1>
   <div class="row filter-row">
-    <div class="col-lg-3">
+    <div class="col-12 col-sm-6 col-lg-3">
       <div class="input-lable">Customer</div>
       <mat-form-field class="input-field">
         <input matInput placeholder="Enter Customer Name" />
       </mat-form-field>
     </div>
-    <div class="col-lg-3">
+    <div class="col-12 col-sm-6 col-lg-3">
       <div class="input-lable">Invoice ID</div>
       <mat-form-field class="input-field">
         <input matInput placeholder="Enter Invoice ID" />
       </mat-form-field>
     </div>
-    <div class="col-lg-3">
+    <div class="col-12 col-sm-6 col-lg-3">
       <div class="input-lable">Start Date</div>
       <mat-form-field class="input-field">
-        <input matInput placeholder=" Start Date" />
+        <!-- <input matInput placeholder=" Start Date" /> -->
+        <input matInput [matDatepicker]="picker1" placeholder=" Start Date" />
+        <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
+        <mat-datepicker-toggle
+          matIconSuffix
+          [for]="picker1"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
       </mat-form-field>
     </div>
-    <div class="col-lg-3">
+    <div class="col-12 col-sm-6 col-lg-3">
       <div class="input-lable">End Date</div>
       <mat-form-field class="input-field">
-        <input matInput placeholder="End Date" />
+        <!-- <input matInput placeholder="End Date" /> -->
+        <input matInput [matDatepicker]="picker2" placeholder=" End Date" />
+        <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
+        <mat-datepicker-toggle
+          matIconSuffix
+          [for]="picker2"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
       </mat-form-field>
     </div>
   </div>

@@ -42,3 +42,26 @@
 .demo-section + .demo-section {
   margin-top: 16px;
 }
+.search {
+  position: relative;
+}
+
+.search ::placeholder {
+  color: #aaa;
+}
+.search .form-control {
+  padding: 8px 2.8rem;
+}
+
+.search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  top: 10px;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
