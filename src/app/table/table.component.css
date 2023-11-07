@@ -1,12 +1,31 @@
 .text-blue {
   color: #0b63f8 !important;
 }
-
+/* tbody, */
+td,
+/* tfoot, */
+th,
+/* thead, */
+tr {
+  border-color: #f2f2f2 !important;
+  border-style: solid;
+  border-bottom-width: 1px;
+}
 .table {
   font-size: 1rem;
+  width: 1180px;
 }
 .table th {
   font-size: 1.12rem;
+}
+.table th:first-child {
+  border-bottom: none !important;
+  padding: 16px;
+}
+.table th:first-child,
+.table td:first-child {
+  display: flex;
+  align-items: center;
 }
 .table td {
   color: #595959;
@@ -50,6 +69,11 @@
   .mdc-checkbox__native-control:focus:checked
   ~ .mdc-checkbox__ripple {
   background-color: #6aa1ff !important;
+}
+@media screen and (max-width: 1100px) {
+  .table {
+    width: 1000px;
+  }
 }
 @media screen and (max-width: 800px) {
   .table {

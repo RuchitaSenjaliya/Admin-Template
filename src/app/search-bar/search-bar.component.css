@@ -65,3 +65,18 @@
   pointer-events: none;
   color: #aaa;
 }
+
+@media screen and (max-width: 630px) {
+  .search-bar {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .search {
+    width: 100%;
+    margin-top: 16px;
+  }
+  .search-bar .profile-info {
+    display: flex;
+    align-self: flex-end;
+  }
+}

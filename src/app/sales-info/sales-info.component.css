@@ -31,6 +31,9 @@
 }
 
 @media screen and (max-width: 800px) {
+  .sales-info .title {
+    font-size: 1.3rem;
+  }
   .sales-info .filter-row .input-lable {
     font-size: 1rem;
   }
